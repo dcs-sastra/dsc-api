@@ -1,0 +1,80 @@
+import mongoose, { Schema } from 'mongoose'
+
+const member = new Schema({
+  name:{
+    type: String
+  },
+  imgUrl:{
+    type: String
+  },
+  role:{
+    type: String
+  }
+}) 
+
+const membersbyClusterSchema = new Schema({
+  lead: {
+    type: member
+  },
+  app: {
+    type: [member]
+  },
+  flutter: {
+    type: [member]
+  },
+  web: {
+    type: [member]
+  },
+  ml: {
+    type: [member]
+  },
+  cloud: {
+    type: [member]
+  },
+  graphic: {
+    type: [member]
+  },
+  content: {
+    type: [member]
+  },
+  marketing: {
+    type: [member]
+  }
+
+}, {
+  timestamps: true,
+  toJSON: {
+    virtuals: true,
+    transform: (obj, ret) => { delete ret._id }
+  }
+})
+
+membersbyClusterSchema.methods = {
+  view (full) {
+    const view = {
+      // simple view
+      id: this.id,
+      lead: this.lead,
+      app: this.app,
+      flutter: this.flutter,
+      web: this.web,
+      ml: this.ml,
+      cloud: this.cloud,
+      graphic: this.graphic,
+      content: this.content,
+      marketing: this.marketing,
+      createdAt: this.createdAt,
+      updatedAt: this.updatedAt
+    }
+
+    return full ? {
+      ...view
+      // add properties for a full view
+    } : view
+  }
+}
+
+const model = mongoose.model('MembersbyCluster', membersbyClusterSchema)
+
+export const schema = model.schema
+export default model
