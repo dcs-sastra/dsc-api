@@ -50,7 +50,11 @@ const config = {
     ip: process.env.IP || undefined,
     port: process.env.PORT || 8080,
     mongo: {
-      uri: process.env.MONGODB_URI || 'mongodb://localhost/dsc-api'
+      uri: `mongodb+srv://${requireProcessEnv('DB_UNAME')}:${requireProcessEnv('DB_PASS')}@cluster0-qjtrk.mongodb.net/test?retryWrites=true&w=majority`,
+      options: {
+        useNewUrlParser: true,
+        debug: true
+      }
     }
   }
 }
