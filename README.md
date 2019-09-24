@@ -20,7 +20,6 @@
 - [MembersbyCluster](#membersbycluster)
 	- [Create membersby cluster](#create-membersby-cluster)
 	- [Delete membersby cluster](#delete-membersby-cluster)
-	- [Retrieve membersby cluster](#retrieve-membersby-cluster)
 	- [Retrieve membersby clusters](#retrieve-membersby-clusters)
 	- [Update membersby cluster](#update-membersby-cluster)
 	
@@ -181,7 +180,7 @@
 
 
 
-	POST /MembersbyClusters
+	POST /MembersbyCluster
 
 
 ### Parameters
@@ -195,13 +194,15 @@
 | web			| 			|  <p>Membersby cluster's web.</p>							|
 | ml			| 			|  <p>Membersby cluster's ml.</p>							|
 | cloud			| 			|  <p>Membersby cluster's cloud.</p>							|
-| nonTech			| 			|  <p>Membersby cluster's nonTech.</p>							|
+| graphic			| 			|  <p>Membersby cluster's graphic.</p>							|
+| content			| 			|  <p>Membersby cluster's content.</p>							|
+| marketing			| 			|  <p>Membersby cluster's marketing.</p>							|
 
 ## Delete membersby cluster
 
 
 
-	DELETE /MembersbyClusters/:id
+	DELETE /MembersbyCluster/:id
 
 
 ### Parameters
@@ -210,18 +211,11 @@
 |---------|-----------|--------------------------------------|
 | access_token			| String			|  <p>master access token.</p>							|
 
-## Retrieve membersby cluster
-
-
-
-	GET /MembersbyClusters/:id
-
-
 ## Retrieve membersby clusters
 
 
 
-	GET /MembersbyClusters
+	GET /MembersbyCluster
 
 
 ### Parameters
@@ -238,7 +232,7 @@
 
 
 
-	PUT /MembersbyClusters/:id
+	PUT /MembersbyCluster/:id
 
 
 ### Parameters

@@ -10,7 +10,7 @@ const router = new Router()
 const { lead, app, flutter, web, ml, cloud, graphic, content, marketing } = schema.tree
 
 /**
- * @api {post} /MembersbyClusters Create membersby cluster
+ * @api {post} /MembersbyCluster Create membersby cluster
  * @apiName CreateMembersbyCluster
  * @apiGroup MembersbyCluster
  * @apiPermission master
@@ -21,7 +21,9 @@ const { lead, app, flutter, web, ml, cloud, graphic, content, marketing } = sche
  * @apiParam web Membersby cluster's web.
  * @apiParam ml Membersby cluster's ml.
  * @apiParam cloud Membersby cluster's cloud.
- * @apiParam nonTech Membersby cluster's nonTech.
+ * @apiParam graphic Membersby cluster's graphic.
+ * @apiParam content Membersby cluster's content.
+ * @apiParam marketing Membersby cluster's marketing.
  * @apiSuccess {Object} membersbyCluster Membersby cluster's data.
  * @apiError {Object} 400 Some parameters may contain invalid values.
  * @apiError 404 Membersby cluster not found.
@@ -33,11 +35,11 @@ router.post('/',
   create)
 
 /**
- * @api {get} /MembersbyClusters Retrieve membersby clusters
- * @apiName RetrieveMembersbyClusters
+ * @api {get} /MembersbyCluster Retrieve membersby clusters
+ * @apiName RetrieveMembersbyCluster
  * @apiGroup MembersbyCluster
  * @apiUse listParams
- * @apiSuccess {Object[]} membersbyClusters List of membersby clusters.
+ * @apiSuccess {Object[]} MembersbyCluster List of membersby clusters.
  * @apiError {Object} 400 Some parameters may contain invalid values.
  */
 router.get('/',
@@ -45,7 +47,7 @@ router.get('/',
   index)
 
 /**
- * @api {get} /MembersbyClusters/:id Retrieve membersby cluster
+ * @api {get} /MembersbyCluster/:id Retrieve membersby cluster
  * @apiName RetrieveMembersbyCluster
  * @apiGroup MembersbyCluster
  * @apiSuccess {Object} membersbyCluster Membersby cluster's data.
@@ -56,7 +58,7 @@ router.get('/:id',
   show)
 
 /**
- * @api {put} /MembersbyClusters/:id Update membersby cluster
+ * @api {put} /MembersbyCluster/:id Update membersby cluster
  * @apiName UpdateMembersbyCluster
  * @apiGroup MembersbyCluster
  * @apiPermission master
@@ -79,7 +81,7 @@ router.put('/:id',
   update)
 
 /**
- * @api {delete} /MembersbyClusters/:id Delete membersby cluster
+ * @api {delete} /MembersbyCluster/:id Delete membersby cluster
  * @apiName DeleteMembersbyCluster
  * @apiGroup MembersbyCluster
  * @apiPermission master
