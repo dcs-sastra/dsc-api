@@ -2,7 +2,7 @@ import { success, notFound } from '../../services/response/'
 import { Events } from '.'
 
 export const create = ({ bodymen: { body } }, res, next) =>
-  console.log(body)
+  Events.create(body)
     .then((events) => events.view(true))
     .then(success(res, 201))
     .catch(next)
