@@ -1,7 +1,6 @@
 language: node_js
 node_js:
-- v4
-- v5
+- v10
 - v6
 addons:
   apt:
@@ -17,3 +16,6 @@ env:
   - CXX=g++-4.8
   - MASTER_KEY=masterKey
   - JWT_SECRET=jwtSecret
+  - DB_UNAME=admin
+  - DB_PASS=password
+

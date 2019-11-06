@@ -25,9 +25,11 @@ let mongoServer
 
 beforeAll(async () => {
   mongoServer = new MongodbMemoryServer({
-   binary: {
-    version: '4.0.0', 
-  }})
+  	binary: {
+  		checkMD5: false
+  	},
+  	debug: true
+  })
   const mongoUri = await mongoServer.getConnectionString()
   await mongoose.connect(mongoUri, (err) => {
     if (err) console.error(err)
