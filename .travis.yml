@@ -19,4 +19,6 @@ env:
   - JWT_SECRET=jwtSecret
   - DB_UNAME=admin
   - DB_PASS=password
-
+branches:
+  only:
+  - master
