@@ -11,19 +11,88 @@ beforeEach(async () => {
   membersbyCluster = await MembersbyCluster.create({})
 })
 
+let content = {
+	access_token: masterKey,
+        "lead": {
+            
+            "name": "Kavin Raju S",
+            "imgUrl": "Kavin Raju",
+            "role": "DSC Lead, App Developer"
+        },
+        "app": [
+            {
+                
+                "name": "Kathir Thaniyarasu",
+                "imgUrl": "Kathir"
+            }
+           
+        ],
+        "flutter": [
+            {
+                
+                "name": "Ashwin Ram",
+                "imgUrl": "Ashwin Ram"
+            }
+        ],
+        "web": [
+            {
+                
+                "name": "Aravind Srinivasan",
+                "imgUrl": "Aravind Srinivasan"
+            },
+            
+        ],
+        "ml": [
+            {
+                
+                "name": "Anjineyulu TV",
+                "imgUrl": "male"
+            }
+        ],
+        "cloud": [
+            {
+                
+                "name": "Sivaneshwar P",
+                "imgUrl": "Sivaneshwar P"
+            }
+        ],
+        "graphic": [
+            {
+                
+                "name": "Kapil",
+                "imgUrl": "male"
+            }
+        ],
+        "content": [
+            {
+                
+                "name": "Rogini S",
+                "imgUrl": "Rogini"
+            }
+        ],
+        "marketing": [
+            {
+                
+                "name": "Nishanth S",
+                "imgUrl": "Nishanth Sekar"
+            }
+        ]
+    }
+
 test('POST /MembersbyClusters 201 (master)', async () => {
   const { status, body } = await request(app())
     .post(`${apiRoot}`)
-    .send({ access_token: masterKey, lead: 'test', app: 'test', flutter: 'test', web: 'test', ml: 'test', cloud: 'test', nonTech: 'test' })
+    .send( content )
+
   expect(status).toBe(201)
   expect(typeof body).toEqual('object')
-  expect(body.lead).toEqual('test')
-  expect(body.app).toEqual('test')
-  expect(body.flutter).toEqual('test')
-  expect(body.web).toEqual('test')
-  expect(body.ml).toEqual('test')
-  expect(body.cloud).toEqual('test')
-  expect(body.nonTech).toEqual('test')
+  expect(body.lead.name).toEqual(content.lead.name)
+  expect(body.app[0].name).toEqual(content.app[0].name)
+  expect(body.flutter[0].name).toEqual(content.flutter[0].name)
+  expect(body.web[0].name).toEqual(content.web[0].name)
+  expect(body.ml[0].name).toEqual(content.ml[0].name)
+  expect(body.cloud[0].name).toEqual(content.cloud[0].name)
+  expect(body.graphic[0].name).toEqual(content.graphic[0].name)
 })
 
 test('POST /MembersbyClusters 401', async () => {
@@ -56,17 +125,16 @@ test('GET /MembersbyClusters/:id 404', async () => {
 test('PUT /MembersbyClusters/:id 200 (master)', async () => {
   const { status, body } = await request(app())
     .put(`${apiRoot}/${membersbyCluster.id}`)
-    .send({ access_token: masterKey, lead: 'test', app: 'test', flutter: 'test', web: 'test', ml: 'test', cloud: 'test', nonTech: 'test' })
+    .send(content)
   expect(status).toBe(200)
   expect(typeof body).toEqual('object')
-  expect(body.id).toEqual(membersbyCluster.id)
-  expect(body.lead).toEqual('test')
-  expect(body.app).toEqual('test')
-  expect(body.flutter).toEqual('test')
-  expect(body.web).toEqual('test')
-  expect(body.ml).toEqual('test')
-  expect(body.cloud).toEqual('test')
-  expect(body.nonTech).toEqual('test')
+  expect(body.lead.name).toEqual(content.lead.name)
+  expect(body.app[0].name).toEqual(content.app[0].name)
+  expect(body.flutter[0].name).toEqual(content.flutter[0].name)
+  expect(body.web[0].name).toEqual(content.web[0].name)
+  expect(body.ml[0].name).toEqual(content.ml[0].name)
+  expect(body.cloud[0].name).toEqual(content.cloud[0].name)
+  expect(body.graphic[0].name).toEqual(content.graphic[0].name)
 })
 
 test('PUT /MembersbyClusters/:id 401', async () => {

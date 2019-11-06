@@ -14,11 +14,11 @@ beforeEach(async () => {
 test('POST /events 201 (master)', async () => {
   const { status, body } = await request(app())
     .post(`${apiRoot}`)
-    .send({ access_token: masterKey, name: 'test', date: 'test', description: 'test', main: 'test', venue: 'test', speakers: 'test', poster: 'test', register_link: 'test' })
+    .send({ access_token: masterKey, name: 'test', date: '19 Aug 2019', description: 'test', main: 'test', venue: 'test', speakers: 'test', poster: 'test', register_link: 'test' })
   expect(status).toBe(201)
   expect(typeof body).toEqual('object')
   expect(body.name).toEqual('test')
-  expect(body.date).toEqual('test')
+  expect(body.date).toEqual(new Date('19 Aug 2019').toISOString())
   expect(body.description).toEqual('test')
   expect(body.main).toEqual('test')
   expect(body.venue).toEqual('test')
@@ -57,12 +57,12 @@ test('GET /events/:id 404', async () => {
 test('PUT /events/:id 200 (master)', async () => {
   const { status, body } = await request(app())
     .put(`${apiRoot}/${events.id}`)
-    .send({ access_token: masterKey, name: 'test', date: 'test', description: 'test', main: 'test', venue: 'test', speakers: 'test', poster: 'test', register_link: 'test' })
+    .send({ access_token: masterKey, name: 'test', date: '19 Aug 2019', description: 'test', main: 'test', venue: 'test', speakers: 'test', poster: 'test', register_link: 'test' })
   expect(status).toBe(200)
   expect(typeof body).toEqual('object')
   expect(body.id).toEqual(events.id)
   expect(body.name).toEqual('test')
-  expect(body.date).toEqual('test')
+  expect(body.date).toEqual(new Date('19 Aug 2019').toISOString())
   expect(body.description).toEqual('test')
   expect(body.main).toEqual('test')
   expect(body.venue).toEqual('test')
@@ -80,7 +80,7 @@ test('PUT /events/:id 401', async () => {
 test('PUT /events/:id 404 (master)', async () => {
   const { status } = await request(app())
     .put(apiRoot + '/123456789098765432123456')
-    .send({ access_token: masterKey, name: 'test', date: 'test', description: 'test', main: 'test', venue: 'test', speakers: 'test', poster: 'test', register_link: 'test' })
+    .send({ access_token: masterKey, name: 'test', date: '19 Aug 2019', description: 'test', main: 'test', venue: 'test', speakers: 'test', poster: 'test', register_link: 'test' })
   expect(status).toBe(404)
 })
 
