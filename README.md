@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/dsc-sastra-university/dsc-api.svg?branch=master)](https://travis-ci.org/dsc-sastra-university/dsc-api)
 # dsc-api v0.0.0
 
 
