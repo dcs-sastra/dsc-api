@@ -27,11 +27,10 @@ beforeAll(async () => {
   mongoServer = new MongodbMemoryServer({
   	binary: {
   		checkMD5: false
-  	},
-  	debug: true
+  	}
   })
   const mongoUri = await mongoServer.getConnectionString()
-  await mongoose.connect(mongoUri, (err) => {
+  await mongoose.connect(mongoUri, { useNewUrlParser: true, 'useUnifiedTopology': true, 'useCreateIndex': true }, (err) => {
     if (err) console.error(err)
   })
 })

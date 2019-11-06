@@ -1,7 +1,8 @@
 language: node_js
 node_js:
 - v10
-- v6
+- v8.16
+- node
 addons:
   apt:
     sources:
@@ -18,4 +19,6 @@ env:
   - JWT_SECRET=jwtSecret
   - DB_UNAME=admin
   - DB_PASS=password
-
+branches:
+  only:
+  - master
