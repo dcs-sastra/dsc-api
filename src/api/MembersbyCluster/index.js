@@ -7,7 +7,7 @@ import { schema } from './model'
 export MembersbyCluster, { schema } from './model'
 
 const router = new Router()
-const { lead, app, flutter, web, ml, cloud, arvr, graphic, content, marketing } = schema.tree
+const { lead, app, flutter, web, ml, cloud, arvr, graphic, content, marketing, eventcoverage } = schema.tree
 
 /**
  * @api {post} /MembersbyCluster Create membersby cluster
@@ -31,7 +31,7 @@ const { lead, app, flutter, web, ml, cloud, arvr, graphic, content, marketing } 
  */
 router.post('/',
   master(),
-  body({ lead, app, flutter, web, ml, cloud, arvr, graphic, content, marketing}),
+  body({ lead, app, flutter, web, ml, cloud, arvr, graphic, content, marketing, eventcoverage}),
   create)
 
 /**
@@ -77,7 +77,7 @@ router.get('/:id',
  */
 router.put('/:id',
   master(),
-  body({ lead, app, flutter, web, ml, cloud, arvr, graphic, content, marketing }),
+  body({ lead, app, flutter, web, ml, cloud, arvr, graphic, content, marketing, eventcoverage }),
   update)
 
 /**

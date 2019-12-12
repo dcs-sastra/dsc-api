@@ -9,6 +9,10 @@ const member = new Schema({
   },
   role:{
     type: String
+  },
+  linkedin: {
+  	type: String,
+  	default: ""
   }
 }) 
 
@@ -42,6 +46,9 @@ const membersbyClusterSchema = new Schema({
   },
   marketing: {
     type: [member]
+  },
+  eventcoverage: {
+    type: [member]
   }
 
 }, {
@@ -64,6 +71,7 @@ membersbyClusterSchema.methods = {
       ml: this.ml,
       cloud: this.cloud,
       arvr: this.arvr,
+      eventcoverage: this.eventcoverage,
       graphic: this.graphic,
       content: this.content,
       marketing: this.marketing,
