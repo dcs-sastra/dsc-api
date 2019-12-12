@@ -7,7 +7,7 @@ import { schema } from './model'
 export MembersbyCluster, { schema } from './model'
 
 const router = new Router()
-const { lead, app, flutter, web, ml, cloud, graphic, content, marketing } = schema.tree
+const { lead, app, flutter, web, ml, cloud, arvr, graphic, content, marketing } = schema.tree
 
 /**
  * @api {post} /MembersbyCluster Create membersby cluster
