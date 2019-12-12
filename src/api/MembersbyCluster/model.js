@@ -31,6 +31,9 @@ const membersbyClusterSchema = new Schema({
   cloud: {
     type: [member]
   },
+  arvr: {
+    type: [member]
+  },
   graphic: {
     type: [member]
   },
@@ -60,6 +63,7 @@ membersbyClusterSchema.methods = {
       web: this.web,
       ml: this.ml,
       cloud: this.cloud,
+      arvr: this.arvr,
       graphic: this.graphic,
       content: this.content,
       marketing: this.marketing,

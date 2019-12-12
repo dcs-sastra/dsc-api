@@ -31,7 +31,7 @@ const { lead, app, flutter, web, ml, cloud, graphic, content, marketing } = sche
  */
 router.post('/',
   master(),
-  body({ lead, app, flutter, web, ml, cloud, graphic, content, marketing}),
+  body({ lead, app, flutter, web, ml, cloud, arvr, graphic, content, marketing}),
   create)
 
 /**
@@ -77,7 +77,7 @@ router.get('/:id',
  */
 router.put('/:id',
   master(),
-  body({ lead, app, flutter, web, ml, cloud, graphic, content, marketing }),
+  body({ lead, app, flutter, web, ml, cloud, arvr, graphic, content, marketing }),
   update)
 
 /**
