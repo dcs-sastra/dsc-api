@@ -4,6 +4,7 @@ import auth from './auth'
 import events from './events'
 import clusters from './clusters'
 import membersbyCluster from './MembersbyCluster'
+import resources from './resources'
 
 const router = new Router()
 
@@ -35,5 +36,6 @@ router.use('/auth', auth)
 router.use('/events', events)
 router.use('/clusters', clusters)
 router.use('/MembersbyCluster', membersbyCluster)
+router.use('/resources', resources)
 
 export default router
