@@ -257,7 +257,7 @@
 
 # Resources
 
-## Create resources
+## Create resource
 
 
 
@@ -269,10 +269,10 @@
 | Name     | Type       | Description                           |
 |:---------|:-----------|:--------------------------------------|
 | access_token | `String` | <p>master access token.</p> |
-| name | `` | <p>Resource's name.</p> |
-| description | `` | <p>Resources's description.</p> |
-| resource_url | `` | <p>Url to the resource.</p> |
-| image_url | `` | <p>Resource's image_url.</p> |
+| name | | <p>Resource's name.</p> |
+| description | | <p>Resources's description.</p> |
+| resource_url | | <p>Url to the resource.</p> |
+| image_url | | <p>Resource's image_url.</p> |
 
 ## Delete resources
 
@@ -294,7 +294,7 @@
 	GET /resources/:id
 
 
-## Update events
+## Update resource
 
 
 
@@ -306,10 +306,10 @@
 | Name     | Type       | Description                           |
 |:---------|:-----------|:--------------------------------------|
 | access_token | `String` | <p>master access token.</p> |
-| name | `` | <p>Resource's name.</p> |
-| description | `` | <p>Resources's description.</p> |
-| resource_url | `` | <p>Url to the resource.</p> |
-| image_url | `` | <p>Resource's image_url.</p> |
+| name | | <p>Resource's name.</p> |
+| description | | <p>Resources's description.</p> |
+| resource_url | | <p>Url to the resource.</p> |
+| image_url | | <p>Resource's image_url.</p> |
 
 
 # User
