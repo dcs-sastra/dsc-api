@@ -23,6 +23,12 @@
 	- [Delete membersby cluster](#delete-membersby-cluster)
 	- [Retrieve membersby clusters](#retrieve-membersby-clusters)
 	- [Update membersby cluster](#update-membersby-cluster)
+
+- [Resources](#Resources)
+	- [Create resource](#Create-resource)
+	- [Delete resources](#Delete-resources)
+	- [Retrieve resources](#Retrieve-resources)
+	- [Update resource](#Update-resource)
 	
 - [User](#user)
 	- [Create user](#create-user)
@@ -248,6 +254,63 @@
 | ml			| 			|  <p>Membersby cluster's ml.</p>							|
 | cloud			| 			|  <p>Membersby cluster's cloud.</p>							|
 | nonTech			| 			|  <p>Membersby cluster's nonTech.</p>							|
+
+# Resources
+
+## Create resources
+
+
+
+	POST /resources
+
+
+### Parameters
+
+| Name     | Type       | Description                           |
+|:---------|:-----------|:--------------------------------------|
+| access_token | `String` | <p>master access token.</p> |
+| name | `` | <p>Resource's name.</p> |
+| description | `` | <p>Resources's description.</p> |
+| resource_url | `` | <p>Url to the resource.</p> |
+| image_url | `` | <p>Resource's image_url.</p> |
+
+## Delete resources
+
+
+
+	DELETE /resources/:id
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>master access token.</p>							|
+
+## Retrieve resources
+
+
+
+	GET /resources/:id
+
+
+## Update events
+
+
+
+	PUT /resources/:id
+
+
+### Parameters
+
+| Name     | Type       | Description                           |
+|:---------|:-----------|:--------------------------------------|
+| access_token | `String` | <p>master access token.</p> |
+| name | `` | <p>Resource's name.</p> |
+| description | `` | <p>Resources's description.</p> |
+| resource_url | `` | <p>Url to the resource.</p> |
+| image_url | `` | <p>Resource's image_url.</p> |
+
 
 # User
 
