@@ -10,6 +10,9 @@ const member = new Schema({
   role:{
     type: String
   },
+  batch: {
+    type: Number // Intended to store the last year that the person was in DSC
+  },
   linkedin: {
   	type: String,
   	default: ""

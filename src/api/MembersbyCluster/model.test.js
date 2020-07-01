@@ -9,197 +9,233 @@ beforeEach(async () => {
             
             "name": "Kavin Raju S",
             "imgUrl": "Kavin Raju",
-            "role": "DSC Lead, App Developer"
+            "role": "DSC Lead, App Developer",
+            "batch": "2020"
         },
         "app": [
             {
                 
                 "name": "Kathir Thaniyarasu",
-                "imgUrl": "Kathir"
+                "imgUrl": "Kathir",
+                "batch": "2021"
             },
             {
                 
                 "name": "TANVEER AHMAD H",
-                "imgUrl": "Tanveer Ahmad"
+                "imgUrl": "Tanveer Ahmad",
+                "batch": "2020"
             },
             {
                 
                 "name": "Arun Balaji TSR",
-                "imgUrl": "arun"
+                "imgUrl": "arun",
+                "batch": "2020"
             },
             {
                 
                 "name": "Sibi N",
-                "imgUrl": "Sibi Nehru"
+                "imgUrl": "Sibi Nehru",
+                "batch": "2021"
             },
             {
                 
                 "name": "Karthikeyan",
-                "imgUrl": "Karthikeyan K"
+                "imgUrl": "Karthikeyan K",
+                "batch": "2022"
             },
             {
                 
                 "name": "Ashwin Ram",
-                "imgUrl": "Ashwin Ram"
+                "imgUrl": "Ashwin Ram",
+                "batch": "2021"
             },
             {
                 
                 "name": "Seshan",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2021"
             }
         ],
         "flutter": [
             {
                 
                 "name": "Ashwin Ram",
-                "imgUrl": "Ashwin Ram"
+                "imgUrl": "Ashwin Ram",
+                "batch": "2021"
             },
             {
                 
                 "name": "Seshan",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2021"
             }
         ],
         "web": [
             {
                 
                 "name": "Aravind Srinivasan",
-                "imgUrl": "Aravind Srinivasan"
+                "imgUrl": "Aravind Srinivasan",
+                "batch": "2021"
             },
             {
                 
                 "name": "G Sai Svas",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2020"
             },
             {
                 
                 "name": "Srivathsan S",
-                "imgUrl": "Sri Vathsan"
+                "imgUrl": "Sri Vathsan",
+                "batch": "2020"
             },
             {
                 
                 "name": "Vashanth Saravanan",
-                "imgUrl": "Vashanth Saravanan"
+                "imgUrl": "Vashanth Saravanan",
+                "batch": "2021"
             },
             {
                 
                 "name": "K Vamsi Krishna",
-                "imgUrl": "karanam vamsi"
+                "imgUrl": "karanam vamsi",
+                "batch": "2020"
             },
             {
                 
                 "name": "T Manikanta Reddy",
-                "imgUrl": "tmanikanta reddy"
+                "imgUrl": "tmanikanta reddy",
+                "batch": "2020"
             },
             {
                 
                 "name": "Jaikanth",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2020"
             },
             {
                 
                 "name": "PV Lakshmi Narayanan",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2020"
             },
             {
                 
                 "name": "Sharath Sriram",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2020"
             }
         ],
         "ml": [
             {
                 
                 "name": "Anjineyulu TV",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2021"
             },
             {
                 
                 "name": "P Vijay Rama Raju",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2020"
             },
             {
                 
                 "name": "Sreenithi Balasubramanian",
-                "imgUrl": "Sreenithi Balasubramanian"
+                "imgUrl": "Sreenithi Balasubramanian",
+                "batch": "2020"
             },
             {
                 
                 "name": "Vishal R",
-                "imgUrl": "Vishal R"
+                "imgUrl": "Vishal R",
+                "batch": "2020"
             },
             {
                 
                 "name": "S Giteka",
-                "imgUrl": "giteka senthilkumar"
+                "imgUrl": "giteka senthilkumar",
+                "batch": "2021"
             },
             {
                 
                 "name": "Sivaneshwar P",
-                "imgUrl": "Sivaneshwar P"
+                "imgUrl": "Sivaneshwar P",
+                "batch": "2020"
             },
             {
                 
                 "name": "Gokul",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2020"
             }
         ],
         "cloud": [
             {
                 
                 "name": "Sivaneshwar P",
-                "imgUrl": "Sivaneshwar P"
+                "imgUrl": "Sivaneshwar P",
+                "batch": "2020"
             },
             {
                 
                 "name": "Rohith",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2021"
             }
         ],
         "graphic": [
             {
                 
                 "name": "Kapil",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2020"
             }
         ],
         "content": [
             {
                 
                 "name": "Rogini S",
-                "imgUrl": "Rogini"
+                "imgUrl": "Rogini",
+                "batch": "2020"
             },
             {
                 
                 "name": "Akhil Bharadwaj",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2020"
             },
             {
                 
                 "name": "Subhashri",
-                "imgUrl": "female"
+                "imgUrl": "female",
+                "batch": "2020"
             }
         ],
         "marketing": [
             {
                 
                 "name": "Nishanth S",
-                "imgUrl": "Nishanth Sekar"
+                "imgUrl": "Nishanth Sekar",
+                "batch": "2020"
             },
             {
                 
                 "name": "Umesh Kanna",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2020"
             },
             {
                 
                 "name": "Syed Irfan",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2020"
             },
             {
                 
                 "name": "Mukunt B Surya",
-                "imgUrl": "male"
+                "imgUrl": "male",
+                "batch": "2020"
             }
         ]
     }
