@@ -40,7 +40,7 @@ const config = {
   test: { },
   development: {
     mongo: {
-      uri: 'mongodb://localhost:27017' 
+      uri: 'mongodb://localhost:27017/dev' 
     }
   },
   production: {
