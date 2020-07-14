@@ -30,20 +30,17 @@ const config = {
     jwtSecret: requireProcessEnv('JWT_SECRET'),
     mongo: {
       options: {
-        db: {
-          safe: true
-        }
+        useCreateIndex: true,
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        debug: true
       }
     }
   },
   test: { },
   development: {
     mongo: {
-      uri: `mongodb+srv://${requireProcessEnv('DB_UNAME')}:${requireProcessEnv('DB_PASS')}@cluster0-qjtrk.mongodb.net/test?retryWrites=true&w=majority`,
-      options: {
-        useNewUrlParser: true,
-        debug: true
-      }
+      uri: 'mongodb://localhost:27017/dev' 
     }
   },
   production: {
@@ -52,8 +49,7 @@ const config = {
     mongo: {
       uri: `mongodb+srv://${requireProcessEnv('DB_UNAME')}:${requireProcessEnv('DB_PASS')}@cluster0-qjtrk.mongodb.net/test?retryWrites=true&w=majority`,
       options: {
-        useNewUrlParser: true,
-        debug: true
+        debug: false
       }
     }
   }
