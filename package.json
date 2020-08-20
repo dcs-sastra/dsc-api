@@ -71,7 +71,7 @@
     "@babel/plugin-transform-runtime": "^7.0.0",
     "@babel/runtime": "^7.0.0",
     "@babel/runtime-corejs2": "^7.7.1",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
     "bodymen": "^1.0.3",
